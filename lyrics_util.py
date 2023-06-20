@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 def fetch_lyrics(artist, song_title):
     # Format the artist and song title for the URL
     artist = artist.lower().replace(" ", "-")
@@ -18,7 +19,7 @@ def fetch_lyrics(artist, song_title):
         soup = BeautifulSoup(response.content, 'html.parser')
 
         # Find the lyrics section
-        lyrics_divs = soup.find_all('div', attrs={"data-lyrics-container":"true"})
+        lyrics_divs = soup.find_all('div', attrs={"data-lyrics-container": "true"})
 
         lyrics_lines = [d.get_text('\n') for d in lyrics_divs]
 
@@ -26,3 +27,4 @@ def fetch_lyrics(artist, song_title):
 
     # Return None if lyrics couldn't be fetched
     return None
+
