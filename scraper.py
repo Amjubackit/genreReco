@@ -3,8 +3,8 @@ import json
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-SPOTIPY_CLIENT_ID = ""
-SPOTIPY_CLIENT_SECRET = ""
+SPOTIPY_CLIENT_ID = "e4d756536f474fdf8fdee07780ea76d1"
+SPOTIPY_CLIENT_SECRET = "b75eb5a3ebb14541b61e77626285cfd8"
 spotify = spotipy.Spotify(
     client_credentials_manager=SpotifyClientCredentials(
         client_id=SPOTIPY_CLIENT_ID,
