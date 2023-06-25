@@ -27,4 +27,3 @@ def fetch_lyrics(artist, song_title):
 
     # Return None if lyrics couldn't be fetched
     return None
-
