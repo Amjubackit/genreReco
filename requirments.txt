@@ -1,0 +1,6 @@
+regex
+matplotlib
+seaborn
+pandas
+bs4
+jupyter
