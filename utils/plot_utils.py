@@ -42,7 +42,7 @@ def plot_cross_tabulation(df, col_names, other_col_name):
 
 
 def get_highly_correlated_cols(df):
-    corr = df.corr()
+    corr = df.select_dtypes("number", "category").corr()
     n = corr.shape[0]
     correlated_cols = []
     for i in range(n):
