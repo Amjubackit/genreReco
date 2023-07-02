@@ -1,17 +1,17 @@
 import json
 import os
+import os.path as osp
 import re
 import requests
 from bs4 import BeautifulSoup
-from nltk.corpus import words
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
 from utils.general_utls import is_file_valid
+slang_file_path = osp.join(osp.dirname(osp.abspath(__file__)), 'slang_words.txt')
 
-# WORD_LIST = set(words.words())
 STOPWORD_LIST = set(stopwords.words('english'))
 SLANG_WORDS = []
-with open('slang_words.txt', 'r') as file:
+with open(slang_file_path, 'r') as file:
     [SLANG_WORDS.append(line.strip()) for line in file]
 
 
@@ -119,4 +119,3 @@ def fetch_lyrics(url):
     print(f"Lyrics data not found")
     # Return None if lyrics couldn't be fetched
     return None
-
