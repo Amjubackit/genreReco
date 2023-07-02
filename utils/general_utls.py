@@ -1,6 +1,5 @@
 import re
 from collections import Counter
-import csv
 import os
 import pandas as pd
 
@@ -68,8 +67,9 @@ def remove_file(file_path):
 
 def save_dataset(data, filepath, overwrite=False):
     # Check if the file already exists and overwrite is not enabled
-    if os.path.exists(filepath) and not overwrite:
-        raise FileExistsError("File already exists. Set 'overwrite' to True to overwrite the file.")
+    if os.path.exists(filepath) and overwrite:
+        # Remove file content
+        open(filepath, "w").close()
 
     # Convert raw data into pandas df for an easier save
     if not isinstance(data, pd.DataFrame):
