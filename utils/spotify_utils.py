@@ -1,22 +1,17 @@
+import json
 import os
+import os.path as osp
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-
 from utils.general_utls import is_file_valid, save_lyrics, purify_text, get_common_genre
 from utils.lyrics_utils import fetch_lyrics, LyricsHandler
 
-# AMJUBACK KEYS
-# SPOTIPY_CLIENT_ID = "e4d756536f474fdf8fdee07780ea76d1"
-# SPOTIPY_CLIENT_SECRET = "b75eb5a3ebb14541b61e77626285cfd8"
 
-SPOTIPY_CLIENT_ID = "a423e074aefd437ca1d4a858d1d3b9d4"
-SPOTIPY_CLIENT_SECRET = "000f12c9941f491fb8a1d50e81f86aa2"
+with open(osp.join(osp.dirname(osp.abspath("__file__")), 'creds.json'), 'r') as fp:
+    creds_dict = json.load(fp)
 
 spotify = spotipy.Spotify(
-    client_credentials_manager=SpotifyClientCredentials(
-        client_id=SPOTIPY_CLIENT_ID,
-        client_secret=SPOTIPY_CLIENT_SECRET
-    )
+    client_credentials_manager=SpotifyClientCredentials(**creds_dict)
 )
 
 
