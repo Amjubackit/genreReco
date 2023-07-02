@@ -66,16 +66,18 @@ def remove_file(file_path):
 
 
 def save_dataset(data, filepath, overwrite=False):
-    # Check if the file already exists and overwrite is not enabled
-    if os.path.exists(filepath) and overwrite:
-        # Remove file content
-        open(filepath, "w").close()
-
     # Convert raw data into pandas df for an easier save
     if not isinstance(data, pd.DataFrame):
         data = pd.DataFrame(data)
 
-    data.to_csv(filepath, index=False)
+    if overwrite or not os.path.exists(filepath):
+        # write mode by default, overwrites csv data
+        data.to_csv(filepath, index=False)
+
+    else:
+        # Append to an existing csv file, ignore header
+        data.to_csv(filepath, index=False, mode="a", header=False)
+
     print(f"Data successfully saved as '{filepath}'.")
 
 
