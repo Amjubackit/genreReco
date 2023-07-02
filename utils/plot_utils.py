@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 
@@ -19,6 +20,7 @@ def get_frequent_elements(df, col_name, num_top_elements):
 
 def plot_frequent_elements(df, df_params):
     fig, axs = plt.subplots(1, len(df_params), figsize=(20, 5))
+    axs = np.array(axs).reshape(-1)
     for i, row in df_params.iterrows():
         col_name = row['col_name']
         plot_type = row['plot_type']
