@@ -6,24 +6,13 @@ from bs4 import BeautifulSoup
 from nltk.corpus import words
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
-from utils.general_utls import is_file_valid, purify_text
+from utils.general_utls import is_file_valid
 
 # WORD_LIST = set(words.words())
 STOPWORD_LIST = set(stopwords.words('english'))
-SLANG_WORDS = [
-    'stan', 'extra', 'cray', 'bae', 'goat', 'bet', 'giggin', 'noob', 'finesse', 'sus', 'mami', 'tryna'
-                                                                                               'wanna', 'slay',
-    'adorbs', 'gucci', 'flexin', 'chillin', 'squad', 'thicc', 'mad', 'fuego',
-    'gig', 'finsta', 'salty', 'lituation', 'ratchet', 'frenemy', 'shade', 'suss', 'ghosting',
-    'tea', 'viral', 'hella', 'highkey', 'tbt', 'wig', 'savage', 'gassed', 'slayin', 'mothafucka'
-                                                                                    'shook', 'gang', 'swag', 'cap',
-    'throw', 'clout', 'flossin', 'hangry', 'deadass', 'glo-up', 'yolo', 'clap', 'totes',
-    'swerve', 'grind', "yall", 'dope', 'af', 'fomo', 'snatched', 'lil'
-                                                                 'vibes', 'fleek', 'trill', 'grindin', 'lmao', 'slick',
-    'drippin', 'ghosted', 'lowkey', 'swervin', 'rofl',
-    'wavy', 'squad', 'catfish', 'thirst', 'bougie', 'dank', 'clutch', 'fit', 'snack',
-    'lit', 'beef', 'boppin', 'swole', 'vibe', 'hype', 'woke', 'thirsty', 'gonna', 'fleek', 'baewatch', 'poppin'
-]
+SLANG_WORDS = []
+with open('slang_words.txt', 'r') as file:
+    [SLANG_WORDS.append(line.strip()) for line in file]
 
 
 class LyricsHandler:
@@ -60,9 +49,8 @@ class LyricsHandler:
         section_prefixes = ["intro", "outro", "verse", "chorus"]
         cnt_dict = {f"{prefix}_cnt": 0 for prefix in section_prefixes}
         for line in self.lyrics_lines:
-            first_word = line.split(" ")[0]
             for prefix in section_prefixes:
-                if first_word.startswith(f"[{prefix}"):
+                if f"[{prefix}" in line:
                     cnt_dict[f"{prefix}_cnt"] += 1
                     break
 
@@ -95,13 +83,16 @@ class LyricsHandler:
         sentiment = self.sentiment_analysis()
 
         features = {
+            **cnt_dict,
             "line_cnt": len(self.lyrics_lines),
             "word_cnt": word_count,
             "unique_words_ratio": round(unique_words / word_count, 3),
             "stop_words_ratio": round(stopword_count / word_count, 3),
             "slang_words_ratio": round(slang_word_count / word_count, 3),
-            **cnt_dict,
-            **sentiment
+            "positive": sentiment.get("pos"),
+            "negative": sentiment.get("neg"),
+            "neutral": sentiment.get("neu"),
+            "compound": sentiment.get("compound"),
         }
         return features
 
@@ -129,23 +120,3 @@ def fetch_lyrics(url):
     # Return None if lyrics couldn't be fetched
     return None
 
-# if __name__ == '__main__':
-#     # filepath = "/Users/bar-study/PycharmProjects/genreReco/song_lyrics/eminem-superman.txt"
-#     # lyrics_handler = LyricsHandler(filepath)
-#     # print(lyrics_handler.clean_lyrics)
-#     # print(lyrics_handler.tokenized_lyrics)
-#     # slangs = [word for word in lyrics_handler.tokenized_lyrics if lyrics_handler.is_slang_word(word)]
-#     # print(slangs)
-#     # print(len(slangs))
-#     print(len(SLANG_WORDS))
-#     print(len(set(SLANG_WORDS)))
-#     print(set(SLANG_WORDS))
-
-#
-#
-# if __name__ == '__main__':
-#     files = os.listdir("../song_lyrics")
-#     for file in files:
-#         if os.stat("../song_lyrics/" + file).st_size == 0:
-#             print(f"REMOVING {file}")
-#             os.remove("../song_lyrics/" + file)
