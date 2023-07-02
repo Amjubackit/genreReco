@@ -10,27 +10,43 @@ GENRE_LIST = [
 
 
 def fix_genre(genre_string):
-    mapping = {'hip hop': 'hip-hop', 'hip pop': 'hip-hop', "metalcore": "metal"}
-    if genre_string.lower() not in mapping.keys():
-        return genre_string
+    mapping = {
+        'canadian hip hop': 'hip-hop',
+        'lgbtq+ hip hop': 'hip-hop',
+        'hip hop': 'hip-hop',
+        'hip pop': 'hip-hop',
+        "metalcore": "metal",
+        "k-pop": "pop",
+    }
+    # Return genre mapped genre if matched
+    if genre_string.lower() in mapping.keys():
+        return mapping.get(genre_string)
 
-    return mapping.get(genre_string)
+    # If got here genre is not recognized, will not be counted
+    return genre_string
 
 
 def split_list_items(list_items):
     merged_list = [item.split() for item in list_items]
-    flattened_list = [fix_genre(word) for sublist in merged_list for word in sublist]
+    flattened_list = [word for sublist in merged_list for word in sublist]
     return flattened_list
 
 
 def remove_non_genres(word_list):
-    return [item for item in word_list if item in GENRE_LIST]
+    # Search weired genre patterns for each genre in genre list
+    # Returns actual genre list
+    return [genre for genre in GENRE_LIST for item in word_list if genre in item]
 
 
 def get_common_genre(song_genres):
-    translated = [fix_genre(item) for item in song_genres]
-    new_list = split_list_items(translated)
+    dash_removed = [item.replace("-", " ") for item in song_genres]
+    split_list = [item.partition("hip hop") for item in dash_removed]
+    flatten = [subitem for item in split_list for subitem in item if subitem]
+    fixed_list = [fix_genre(item) for item in flatten]
+    new_list = split_list_items(fixed_list)
     clean_list = remove_non_genres(new_list)
+    if not clean_list:
+        return
     genre_counts = Counter(clean_list)
     most_common_genre = genre_counts.most_common(1)
     return most_common_genre[0][0]
@@ -90,5 +106,3 @@ def is_file_valid(file_path):
         file_size = os.stat(file_path).st_size
         return file_size > 0
     return False
-
-
