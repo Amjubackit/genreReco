@@ -7,7 +7,7 @@ from utils.general_utls import is_file_valid, save_lyrics, purify_text, get_comm
 from utils.lyrics_utils import fetch_lyrics, LyricsHandler
 
 
-with open(osp.join(osp.dirname(osp.abspath("__file__")), 'creds.json'), 'r') as fp:
+with open(osp.join(osp.dirname(osp.abspath(__file__)), 'creds.json'), 'r') as fp:
     creds_dict = json.load(fp)
 
 spotify = spotipy.Spotify(
@@ -55,7 +55,7 @@ def fetch_track_data(track_obj):
 
 def extract_tracks_data(track, audio_features=False):
     print(f"EXTRACTING TRACK FEATURES, AUDIO FEATURES = {audio_features}")
-    artists = track.get("artists")[0]
+    artists = track.get("artists", [])[0]
     artist_id = artists.get("id")
     artist_info = spotify.artist(artist_id)
     artist_genres = artist_info.get("genres", [])
