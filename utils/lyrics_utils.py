@@ -111,11 +111,44 @@ def fetch_lyrics(url):
 
         # Find the lyrics section
         lyrics_divs = soup.find_all('div', attrs={"data-lyrics-container": "true"})
+        lyrics_lines =[]
+        for d in lyrics_divs:
+            [lb.replaceWith('\n') for lb in d.findAll('br')]
 
-        lyrics_lines = [d.get_text('\n') for d in lyrics_divs]
+            lines = re.sub('\n{2,}', '\n', d.getText().strip())
+            lyrics_lines.append(lines)
 
         return lyrics_lines
 
     print(f"Lyrics data not found")
     # Return None if lyrics couldn't be fetched
     return None
+
+
+def save_lyrics(txt, file_path):
+    with open(file_path, 'w') as file:
+        file.write(txt)
+
+
+def get_lyrics_and_save(genius_url, lyrics_file):
+    lyrics = fetch_lyrics(genius_url)
+    if not lyrics:
+        print("RETURNS PARTIAL DATA DUE TO LYRICS FETCH FAILURE")
+        return
+
+    save_lyrics('\n'.join(lyrics), lyrics_file)
+
+    print(f"INIT HANDLER FOR FILE: {lyrics_file}")
+    lyrics_handler = LyricsHandler(lyrics_file)
+    lyrics_features = lyrics_handler.extract_lyrics_features()
+    return lyrics_features
+
+
+def reget_lyrics_df(dataset):
+    for index, row in dataset.iterrows():
+        record = row.copy()
+        f = get_lyrics_and_save(record.lyrics_url, record.lyrics_file)
+        record.update(f)
+        dataset.loc[index] = record
+
+    return dataset
