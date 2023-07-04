@@ -6,11 +6,11 @@ from utils.general_utls import GENRE_LIST, save_dataset, load_dataset
 
 
 def generate_dataset():
-    for genre in GENRE_LIST:
-        for offset in range(offset_range):
-            dataset = []
-            limit = min(50, song_per_genre - 50 * offset)
+    for offset in range(offset_range):
+        limit = min(50, song_per_genre - 50 * (offset + 5))
+        for genre in GENRE_LIST:
             try:
+                dataset = []
                 print(f"\nFETCHING {song_per_genre} {genre.upper()} SONGS, LIMIT: {limit}")
                 res = fetch_tracks(query + f" genre:{genre}", limit=limit, offset=offset * 50)
                 if not res:
@@ -33,12 +33,12 @@ def generate_dataset():
 
 if __name__ == '__main__':
     query = "year:1980-2023"
-    file_name = "dataset_test.csv"
-    song_per_genre = 100
+    file_name = "huge_dataset.csv"
+    song_per_genre = 1000
     offset_range = int(song_per_genre / 50) or 1
     print(f"GOING TO FETCH {song_per_genre * len(GENRE_LIST)} TRACKS")
     dataset_file_path = osp.join(osp.dirname(osp.abspath(__file__)), file_name)
-    # generate_dataset()
+    generate_dataset()
 
     # RECALCULATE IF NEEDED
     # df = load_dataset(dataset_file_path)
