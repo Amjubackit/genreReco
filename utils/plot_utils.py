@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import seaborn as sns
+import math
 
 
 def one_dim_plot(sr, plot_type, axis):
@@ -75,3 +77,49 @@ def transfer_str_to_numeric_vals(dataset):
         dataset[column] = dataset[column].map(lab_map)
 
     return dataset
+
+
+def plot_frequencies(dataset):
+    ordinal_cols = ['common_genre', 'release_year', 'release_month', 'popularity',
+                    'intro_cnt', 'outro_cnt', 'verse_cnt', 'chorus_cnt']
+    cols = min(len(ordinal_cols), 3)
+    rows = math.ceil((len(ordinal_cols) / 3))
+
+    for dummy in range(rows):
+        sub_list = ordinal_cols[dummy * cols:(dummy + 1) * cols]
+        if dummy == 0:
+            plot_types = ['pie', 'bar', 'bar']
+        else:
+            plot_types = ['bar'] * len(sub_list)
+
+        plot_frequent_elements(
+            dataset,
+            pd.DataFrame({
+                'plot_type': plot_types,
+                'col_name': sub_list,
+                'num_top_elements': [7] * len(sub_list)
+            })
+        )
+
+    numeric_cols = ['unique_words_ratio', 'stop_words_ratio', 'slang_words_ratio',
+                    'positive', 'negative', 'neutral', 'compound']
+    cols = min(len(numeric_cols), 3)
+    rows = math.ceil((len(numeric_cols) / 3))
+
+    for ridx in range(rows):
+        fig, axs = plt.subplots(1, min(cols, len(numeric_cols) - ridx * 3), figsize=(20, 5))
+        axs = np.array(axs).reshape(-1)
+        for i, col in enumerate(numeric_cols[ridx * 3:ridx * 3 + 3]):
+            sns.histplot(dataset[col], ax=axs[i])
+
+
+def plot_continuous_feature_relations(dataset):
+    continuous_vars = ["duration", "line_cnt", "word_cnt", "unique_words_ratio", "stop_words_ratio",
+                       "slang_words_ratio"]
+    var_combinations = [(var1, var2) for var1 in continuous_vars for var2 in continuous_vars if var1 < var2]
+    rows_num = math.ceil(len(var_combinations) / 3)
+    for row_index in range(rows_num):
+        fig, axs = plt.subplots(1, 3, figsize=(20, 5))
+        axs = axs.flatten()
+        for index, feature in enumerate(var_combinations[3 * row_index:3 * row_index + 3]):
+            sns.scatterplot(dataset, x=feature[0], y=feature[1], ax=axs[index % 3])
