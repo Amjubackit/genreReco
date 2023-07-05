@@ -50,13 +50,11 @@ def get_common_genre(song_genres):
     if not clean_list:
         return
 
-    genre_counts = Counter(clean_list)
-    # Get the highest frequency
-    max_freq = max(genre_counts.values())
-    # Filter elements with the highest frequency
-    most_frequent = [element for element, freq in genre_counts.items() if freq == max_freq]
-    # Choose randomly between the winners!
-    return random.choice(most_frequent)
+    genre_counts = Counter(clean_list)  # dict
+    elements = [element for element, freq in genre_counts.items()]
+    freqs = [freq for element, freq in genre_counts.items()]
+    # Choose randomly between the known genres!
+    return random.choices(elements,freqs)[0]
 
 
 def purify_text(text):
