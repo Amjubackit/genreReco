@@ -82,15 +82,20 @@ def transfer_str_to_numeric_vals(dataset):
 def plot_frequencies(dataset):
     ordinal_cols = ['common_genre', 'release_year', 'release_month', 'popularity',
                     'intro_cnt', 'outro_cnt', 'verse_cnt', 'chorus_cnt']
-    cols = min(len(ordinal_cols), 4)
-    rows = math.ceil((len(ordinal_cols) / 4))
+    cols = min(len(ordinal_cols), 3)
+    rows = math.ceil((len(ordinal_cols) / 3))
 
     for dummy in range(rows):
         sub_list = ordinal_cols[dummy * cols:(dummy + 1) * cols]
+        if dummy == 0:
+            plot_types = ['pie', 'bar', 'bar']
+        else:
+            plot_types = ['bar'] * len(sub_list)
+
         plot_frequent_elements(
             dataset,
             pd.DataFrame({
-                'plot_type': ['bar'] * len(sub_list),
+                'plot_type': plot_types,
                 'col_name': sub_list,
                 'num_top_elements': [7] * len(sub_list)
             })
@@ -98,13 +103,13 @@ def plot_frequencies(dataset):
 
     numeric_cols = ['unique_words_ratio', 'stop_words_ratio', 'slang_words_ratio',
                     'positive', 'negative', 'neutral', 'compound']
-    cols = min(len(numeric_cols), 4)
-    rows = math.ceil((len(numeric_cols) / 4))
+    cols = min(len(numeric_cols), 3)
+    rows = math.ceil((len(numeric_cols) / 3))
 
     for ridx in range(rows):
-        fig, axs = plt.subplots(1, min(cols, len(numeric_cols) - ridx * 4), figsize=(20, 5))
+        fig, axs = plt.subplots(1, min(cols, len(numeric_cols) - ridx * 3), figsize=(20, 5))
         axs = np.array(axs).reshape(-1)
-        for i, col in enumerate(numeric_cols[ridx * 4:(ridx + 1) * 4]):
+        for i, col in enumerate(numeric_cols[ridx * 3:ridx * 3 + 3]):
             sns.histplot(dataset[col], ax=axs[i])
 
 
