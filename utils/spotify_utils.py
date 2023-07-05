@@ -3,8 +3,8 @@ import os
 import os.path as osp
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-from utils.general_utls import is_file_valid, save_lyrics, purify_text, get_common_genre
-from utils.lyrics_utils import fetch_lyrics, LyricsHandler
+from utils.general_utls import is_file_valid, purify_text, get_common_genre
+from utils.lyrics_utils import fetch_lyrics, LyricsHandler, save_lyrics
 
 
 with open(osp.join(osp.dirname(osp.abspath(__file__)), 'creds.json'), 'r') as fp:
