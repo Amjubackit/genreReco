@@ -22,7 +22,8 @@ Here's my number and a dime, call me anytime
 (Call me) If you need someone to talk to, uh
 (Call me) Satisfaction guaranteed
 (Call me) If you need someone to talk to, uh
-(Call me) Call me(Dialing number, dial tone)
+(Call me) Call me
+(Dialing number, dial tone)
 MAN ON PHONE: Hello, how you doing?
 No, she's gone
 I figured I'd give you a call just to see if you were serious
@@ -46,7 +47,8 @@ You know that I'm the one you need
 You know that I'm the one you need
 You know that I'm the one you need
 You know that I'm the one you need
-Call me any old ti-i-i-i-i-i-i-i-i-i-imeOh
+Call me any old ti-i-i-i-i-i-i-i-i-i-ime
+Oh
 She doesn't treat you like she used to do
 She doesn't treat you like she used to do, no
 Here's my number and a dime

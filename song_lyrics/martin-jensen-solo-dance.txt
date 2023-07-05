@@ -20,7 +20,8 @@ Dance, dance, dance
 [Post-Chorus]
 (Dance, dance, dance)
 Dance, dance, dance
-(Dance, dance, dance)[Verse 2]
+(Dance, dance, dance)
+[Verse 2]
 In the shade of night, you're moving closer
 We're on our way to cross a line
 Think you got me right where you want me

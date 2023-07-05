@@ -3,8 +3,7 @@ Gimme some room, gimme some room
 Gimme some room, gimme some room
 G-g-g-gimme some room, I'm throwing—
 Gimme some room, I'm throwing—
-Gimme some room, 
-I'm throwing elbows
+Gimme some room, I'm throwing elbows
 Ayo
 [Drop]
 [Build]
@@ -21,4 +20,5 @@ G-g-g-gimme some room, I'm throwing
 Gimme some room, I'm throwing—
 Gimme some room, I'm throwing elbows
 Gimme some room, I'm throwing elbows
-Ayo[Drop]
+Ayo
+[Drop]

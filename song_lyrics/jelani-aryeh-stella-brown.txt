@@ -1,8 +1,7 @@
 [Chorus]
 Stella Brown
 I don’t know what to talk about
-How has my head just hollowed out
-?
+How has my head just hollowed out?
 Thoughts use to orbit all around
 On Venus we could find peace
 Stella Brown
@@ -28,7 +27,8 @@ Stella brown
 I don’t know what you want to talk about
 I'm too precautious and I often doubt
 How can I be the boy you dream about
-Stella Brown[Verse 2]
+Stella Brown
+[Verse 2]
 They’re all brunette
 'Bout 5’4
 She’s so herself

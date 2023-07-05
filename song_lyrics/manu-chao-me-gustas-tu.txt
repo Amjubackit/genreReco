@@ -15,12 +15,9 @@ Me gusta el viento, me gustas tú
 Me gusta soñar, me gustas tú
 Me gusta la mar, me gustas tú
 [Estribillo]
-¿Qué voy a hacer? 
-Je ne sais pas
-¿Qué voy a hacer? 
-Je ne sais plus
-¿Qué voy a hacer? 
-Je suis perdu
+¿Qué voy a hacer? Je ne sais pas
+¿Qué voy a hacer? Je ne sais plus
+¿Qué voy a hacer? Je suis perdu
 ¿Qué horas son, mi corazón?
 [Estrofa 2]
 Me gusta la moto, me gustas tú
@@ -30,13 +27,11 @@ Me gusta volver, me gustas tú
 Me gusta marihuana, me gustas tú
 Me gusta colombiana, me gustas tú
 Me gusta la montaña, me gustas tú
-Me gusta la noche (Me gustas tú)[Estribillo]
-¿Qué voy a hacer? 
-Je ne sais pas
-¿Qué voy a hacer? 
-Je ne sais plus
-¿Qué voy a hacer? 
-Je suis perdu
+Me gusta la noche (Me gustas tú)
+[Estribillo]
+¿Qué voy a hacer? Je ne sais pas
+¿Qué voy a hacer? Je ne sais plus
+¿Qué voy a hacer? Je suis perdu
 ¿Qué horas son, mi corazón?
 [Estrofa 3]
 Doce, un minuto
@@ -48,12 +43,9 @@ Me gusta camelar, me gustas tú
 Me gusta la guitarra, me gustas tú
 Me gusta el reggae, me gustas tú
 [Estribillo]
-¿Qué voy a hacer? 
-Je ne sais pas
-¿Qué voy a hacer? 
-Je ne sais plus
-¿Qué voy a hacer? 
-Je suis perdu
+¿Qué voy a hacer? Je ne sais pas
+¿Qué voy a hacer? Je ne sais plus
+¿Qué voy a hacer? Je suis perdu
 ¿Qué horas son, mi corazón?
 [Estrofa 4]
 Me gusta la canela, me gustas tú
@@ -62,28 +54,20 @@ Me gusta menear, me gustas tú
 Me gusta La Coruña, me gustas tú
 Me gusta Malasaña, me gustas tú
 Me gusta la castaña, me gustas tú
-Me gusta Guatemala (Me gustas tú)[Estribillo]
-¿Qué voy a hacer? 
-Je ne sais pas
-¿Qué voy a hacer? 
-Je ne sais plus
-¿Qué voy a hacer? 
-Je suis perdu
+Me gusta Guatemala (Me gustas tú)
+[Estribillo]
+¿Qué voy a hacer? Je ne sais pas
+¿Qué voy a hacer? Je ne sais plus
+¿Qué voy a hacer? Je suis perdu
 ¿Qué horas son, mi corazón?
 [Outro]
-¿Qué voy a hacer? 
-Je ne sais pas
-¿Qué voy a hacer? 
-Je ne sais plus
-¿Qué voy a hacer? 
-Je suis perdu
+¿Qué voy a hacer? Je ne sais pas
+¿Qué voy a hacer? Je ne sais plus
+¿Qué voy a hacer? Je suis perdu
 ¿Qué horas son, mi corazón?
-¿Qué voy a hacer? 
-Je ne sais pas
-¿Qué voy a hacer? 
-Je ne sais plus
-¿Qué voy a hacer? 
-Je suis perdu
+¿Qué voy a hacer? Je ne sais pas
+¿Qué voy a hacer? Je ne sais plus
+¿Qué voy a hacer? Je suis perdu
 ¿Qué horas son, mi corazón?
 ¿Qué horas son, mi corazón?
 (¿Qué horas son, mi corazón?)
@@ -94,6 +78,7 @@ Cuatro de la mañana
 A la bin, a la ban, a la bin, bon, ban
 A la bin, a la ban, a la bin, bon, ban
 Obladí, obladá, obladí, da, da
-A la bin, a la ban, a la bin, bon, banRadio Reloj, cinco de la mañana
+A la bin, a la ban, a la bin, bon, ban
+Radio Reloj, cinco de la mañana
 No todo lo que es oro brilla
 Remedio chino e infalible

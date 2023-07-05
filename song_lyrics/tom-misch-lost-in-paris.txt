@@ -23,7 +23,8 @@ You're lost in Paris
 I hope that you're warm and safe
 The memory that I can't replace
 You're lost in Paris
-(You're lost in Paris)[Verse 2: GoldLink]
+(You're lost in Paris)
+[Verse 2: GoldLink]
 Young young, all in love in a lost place
 God damn, got me runnin' 'round in a rat's race
 Say grace, but I fell in love with a small waist
@@ -48,7 +49,8 @@ You're lost in Paris
 I hope that you're warm and safe
 The memory I can't replace
 You're lost in Paris
-(You're lost in Paris)[Outro: Tom Misch]
+(You're lost in Paris)
+[Outro: Tom Misch]
 I know that I need you now
 The key that I won't forget
 You're lost in Paris

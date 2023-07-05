@@ -1,9 +1,7 @@
 [Letra de "Noche De Travesura"]
 [Coro: Hector "El Father”]
 Esta noche es de travesuras
-Esta 
-noche
- hazme travesuras
+Esta noche hazme travesuras
 Te vo'a devorar en la noche oscura
 Esta noche hazme travesuras
 Tú estás cucando mi calentura
@@ -36,7 +34,8 @@ Tunes, replica el mambo que llegó el más poderoso
 Naldo, el saca monstruo que los tiene a to's furioso'
 Si las gatas bailan en la pista, fabuloso
 Tírenme, muchachos, que yo no soy rencoroso
-(Luny, y quién es más bachatero que nosotros, jajaja)[Coro: Hector "El Father”]
+(Luny, y quién es más bachatero que nosotros, jajaja)
+[Coro: Hector "El Father”]
 Esta noche es de travesuras
 Esta noche hazme travesuras
 Te vo'a devorar en la noche oscura
@@ -62,7 +61,8 @@ Dímelo, qué vas a hacer
 Dímelo, qué vas a hacer
 Si me hago dueño de tu piel
 Si por la noche te hago enloquecer
-Dímelo, qué vas a hacer[Interludio]
+Dímelo, qué vas a hacer
+[Interludio]
 ¡Hector "El Bambino" y Divino!
 Nos fuimos con la bachata bien duro
 LunyTunes

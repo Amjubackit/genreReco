@@ -1,5 +1,4 @@
-[Verse
-]
+[Verse]
 What do you do
 When you've done all you can
 And it seems like it's never enough?
@@ -26,7 +25,8 @@ While your heart has been broken
 And filled with pain?
 Tell me what do you give
 When you've given your all
-Seems like you can't make it through?[Hook 2]
+Seems like you can't make it through?
+[Hook 2]
 Child you just stand
 When there's nothing left to do
 You just stand
@@ -52,7 +52,8 @@ Through the hurt (Stand), jet through the pain (You just)
 Don't you bow (stand), and don't bend (Stand)
 Don't give up (Stand) , no, don't give in (You just)
 Hold on, (Stand) just be strong (Stand)
-God will step in (Stand), and it won't be long (You just)[Last Hook]
+God will step in (Stand), and it won't be long (You just)
+[Last Hook]
 After you done all you can (After you done all you can)
 After you done all you can (After you done all you can)
 After you gone through the hurt (After you done all you can)

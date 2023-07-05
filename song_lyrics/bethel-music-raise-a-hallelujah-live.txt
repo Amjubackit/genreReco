@@ -18,7 +18,8 @@ I'm gonna sing, in the middle of the storm
 Louder and louder, you're gonna hear my praises roar
 Up from the ashes, hope will arise
 Death is defeated, the King is alive!
-[Interlude][Bridge: Jonathan David Helser & Melissa Helser]
+[Interlude]
+[Bridge: Jonathan David Helser & Melissa Helser]
 Sing a little louder (Sing a little louder)
 Sing a little louder (Sing a little louder)
 Sing a little louder (Sing a little louder)
@@ -45,7 +46,8 @@ Death is defeated, the King is alive!
 I raise a hallelujah
 I raise a hallelujah
 I raise a hallelujah
-I raise a hallelujah![Interlude]
+I raise a hallelujah!
+[Interlude]
 [Spontaneous: Jonathan David Helser]
 Just begin to raise your own hallelujah
 I can't do it for you

@@ -19,7 +19,8 @@ Oh no, not I, I will survive
 Oh, as long as I know how to love, I know I'm still alive
 I've got all my life to live, and I've got all my love to give
 And I'll survive, I will survive, hey hey
-[String Solo][Verse 2]
+[String Solo]
+[Verse 2]
 It took all the strength I had, not to fall apart
 Just tryin' hard to mend the pieces of my broken heart
 And I spent oh so many nights just feeling sorry for myself
@@ -42,7 +43,8 @@ And I'll survive, I will survive, oh
 Go on now go, walk out the door
 Just turn around now, 'cause you're not welcome anymore
 Weren't you the one who tried to break me with goodbye?
-Did you think I'd crumble? Did you think I'd lay down and die?[Chorus]
+Did you think I'd crumble? Did you think I'd lay down and die?
+[Chorus]
 Oh no, not I, I will survive
 Oh, as long as I know how to love, I know I'm still alive
 I've got all my life to live, and I've got all my love to give

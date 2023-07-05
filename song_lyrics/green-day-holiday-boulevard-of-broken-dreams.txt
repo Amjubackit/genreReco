@@ -1,8 +1,4 @@
-[
-Part
- I: 
-Holiday
-]
+[Part I: Holiday]
 [Intro]
 Say hey!
 Cha!
@@ -23,7 +19,8 @@ Another protester has crossed the line (Hey!)
 To find the money's on the other side
 Can I get another Amen? (Amen!)
 There's a flag wrapped around a score of men (Hey!)
-A gag, a plastic bag on a monument[Chorus]
+A gag, a plastic bag on a monument
+[Chorus]
 I beg to dream and differ from the hollow lies
 This is the dawning of the rest of our lives
 On holiday! (Hey!)
@@ -48,9 +45,8 @@ I beg to dream and differ from the hollow lies
 This is the dawning of the rest of our lives
 I beg to dream and differ from the hollow lies
 This is the dawning of the rest of our lives
-This is our lives on holiday![Part II: 
-Boulevard of Broken Dreams
-]
+This is our lives on holiday!
+[Part II: Boulevard of Broken Dreams]
 [Verse 1]
 I walk a lonely road
 The only one that I have ever known
@@ -70,7 +66,8 @@ Sometimes, I wish someone out there will find me
 'Til then, I walk alone
 [Post-Chorus]
 Ah-ah, ah-ah, ah-ah, ah-ah
-Ah-ah, ah-ah, ah-ah[Verse 2]
+Ah-ah, ah-ah, ah-ah
+[Verse 2]
 I'm walkin' down the line
 That divides me somewhere in my mind
 On the borderline

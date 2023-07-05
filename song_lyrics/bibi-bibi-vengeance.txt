@@ -21,7 +21,8 @@ Watch me dance
 Watch me sing
 다신 붙잡히지 마
 그땐 보게 되는 거야
-나쁜년[Chorus]
+나쁜년
+[Chorus]
 나쁜년 아주 그냥 나쁜년
 나쁜년 아주 그냥 나쁜년
 나쁜년 아주 그냥 나쁜년
@@ -47,7 +48,8 @@ Watch me dance
 Watch me sing
 다신 붙잡히지 마
 그땐 보게 되는 거야
-나쁜년[Chorus]
+나쁜년
+[Chorus]
 나쁜년 아주 그냥 나쁜년
 나쁜년 아주 그냥 나쁜년
 나쁜년 아주 그냥 나쁜년

@@ -1,6 +1,4 @@
-[Verse 
-1
-]
+[Verse 1]
 Say it's here where our pieces fall in place
 Any rain softly kisses us on the face
 Any wind means we're running
@@ -27,7 +25,8 @@ We can fear 'cause the feeling's fine to betray
 Where our water isn't hidden
 We can burn and be forgiven
 Where our hands hurt from healing
-We can laugh without a reason[Chorus 2]
+We can laugh without a reason
+[Chorus 2]
 'Cause the sun isn't only sinking fast
 Every moon and our bodies make shining glass
 Where the time of our lives is all we have

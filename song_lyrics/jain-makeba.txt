@@ -3,13 +3,11 @@ Ooh-ee
 Ooh-ee
 [Chorus]
 Ooh-ee, Makeba
-Makeba, 
-ma che bella
+Makeba, ma che bella
 Can I get a "ooh-ee"? Makeba
 Makes my body dance for you
 Ooh-ee, Makeba
-Makeba, 
-ma che bella
+Makeba, ma che bella
 Can I get a "ooh-ee"? Makeba
 Makes my body dance for you
 Ooh-ee, Makeba
@@ -24,7 +22,8 @@ Makes my body dance for you
 I wanna hear your breath just next to my soul
 I wanna feel oppressed without any rest
 I wanna see you sing, I wanna see you fight
-'Cause you are the real beauty of human right[Chorus]
+'Cause you are the real beauty of human right
+[Chorus]
 Ooh-ee, Makeba
 Makeba, ma che bella
 Can I get a "ooh-ee"? Makeba
@@ -62,7 +61,8 @@ Makes my body dance for you
 Ooh-ee, Makeba
 Makeba, ma che bella
 Can I get a "ooh-ee"? Makeba
-Makes my body dance for you[Bridge]
+Makes my body dance for you
+[Bridge]
 (Ooh-ee)
 (Makeba, ma che bella)
 (Ooh-ee)
@@ -76,49 +76,26 @@ Makeba, ma che bella
 Ooh-ee
 Makeba, ma che bella
 [Outro]
-Ecnad ydob ym sekam
- (Ooh-ee)
-Abekam ?"Ee-hoo" a teg I nac
- (Makeba, ma che bella)
-Alleb ehc am, Abekam
- (Ooh-ee)
-Abekam, ee-hoo
- (Makeba, ma che bella)
-Uoy rof ecnad ydob ym sekam
- (Ooh-ee)
-Abekam ?"Ee-hoo" a teg I nac
- (Makeba, ma che bella)
-Alleb ehc am, Abekam
- (Ooh-ee)
-Abekam, ee-hoo
-, for you (Makeba, ma che bella)
-Ecnad ydob ym sekam
- (Ooh-ee)
-Abekam ?"Ee-hoo" a teg I nac
- (Makeba, ma che bella)
-Alleb ehc am, Abekam
- (Ooh-ee)
-Abekam, ee-hoo
- (Makeba, ma che bella)
-Uoy rof ecnad ydob ym sekam
- (Ooh-ee)
-Abekam ?"Ee-hoo" a teg I nac
- (Makeba, ma che bella)
-Alleb ehc am, Abekam
- (Ooh-ee)
-Abekam, ee-hoo
-, for you (Makeba, ma che bella)
-Ecnad ydob ym sekam
- (Ooh-ee)
-Abekam ?"Ehoo" a teg I nac
- (Makeba, ma che bella)
-Alleb ehc am, Abekam
- (Ooh-ee)
-Abekam, ee-hoo
- (Makeba, ma che bella)
-Uoy rof ecnad ydob ym sekam
- (Ooh-ee)
-Abekam ?"Ee-hoo" a teg I nac
- (Makeba, ma che bella)
-Alleb
-…
+Ecnad ydob ym sekam (Ooh-ee)
+Abekam ?"Ee-hoo" a teg I nac (Makeba, ma che bella)
+Alleb ehc am, Abekam (Ooh-ee)
+Abekam, ee-hoo (Makeba, ma che bella)
+Uoy rof ecnad ydob ym sekam (Ooh-ee)
+Abekam ?"Ee-hoo" a teg I nac (Makeba, ma che bella)
+Alleb ehc am, Abekam (Ooh-ee)
+Abekam, ee-hoo, for you (Makeba, ma che bella)
+Ecnad ydob ym sekam (Ooh-ee)
+Abekam ?"Ee-hoo" a teg I nac (Makeba, ma che bella)
+Alleb ehc am, Abekam (Ooh-ee)
+Abekam, ee-hoo (Makeba, ma che bella)
+Uoy rof ecnad ydob ym sekam (Ooh-ee)
+Abekam ?"Ee-hoo" a teg I nac (Makeba, ma che bella)
+Alleb ehc am, Abekam (Ooh-ee)
+Abekam, ee-hoo, for you (Makeba, ma che bella)
+Ecnad ydob ym sekam (Ooh-ee)
+Abekam ?"Ehoo" a teg I nac (Makeba, ma che bella)
+Alleb ehc am, Abekam (Ooh-ee)
+Abekam, ee-hoo (Makeba, ma che bella)
+Uoy rof ecnad ydob ym sekam (Ooh-ee)
+Abekam ?"Ee-hoo" a teg I nac (Makeba, ma che bella)
+Alleb…

@@ -1,7 +1,5 @@
 [Intro]
-(
-Mafia
-)
+(Mafia)
 [Verse 1]
 I put your picture on my mirror
 Start to blush when somebody says your name
@@ -23,7 +21,8 @@ When you come around, I get shy
 When I see you, when I see you
 Never know when you might walk by
 So I gotta be right on time
-When I see you, when I see you[Verse 2]
+When I see you, when I see you
+[Verse 2]
 I scribble X's and O's in my notebook
 Checking how my hair and my nails look
 I feel myself in the zone
@@ -46,7 +45,8 @@ When you come around, I get shy
 When I see you, when I see you
 Never know when you might walk by
 So I gotta be right on time
-When I see you, when I see you[Bridge]
+When I see you, when I see you
+[Bridge]
 Something now is taking over me
 Yeah, yeah yeah yeah yeah yeah
 I'm not gonna run

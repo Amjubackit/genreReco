@@ -23,7 +23,8 @@ I need ooh-la-la-la-la
 I need la-la-la-la-la-la
 I need ooh-la-la-la-la
 I need la-la-la-la-la-la
-I need ooh-la-la-la-la[Bridge]
+I need ooh-la-la-la-la
+[Bridge]
 You know I walk for days
 I wanna waste some time
 You wanna be so mean

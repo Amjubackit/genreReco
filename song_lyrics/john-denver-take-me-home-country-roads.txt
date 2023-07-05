@@ -1,8 +1,6 @@
 [Verse 1]
 Almost Heaven, West Virginia
-Blue Ridge Mountains
-, 
-Shenandoah River
+Blue Ridge Mountains, Shenandoah River
 Life is old there, older than the trees
 Younger than the mountains, growing like a breeze
 [Chorus]
@@ -24,7 +22,8 @@ Take me home, country roads
 I hear her voice in the morning hour, she calls me
 The radio reminds me of my home far away
 Driving down the road, I get a feeling
-That I should have been home yesterday, yesterday[Chorus]
+That I should have been home yesterday, yesterday
+[Chorus]
 Country roads, take me home
 To the place I belong
 West Virginia, mountain mama

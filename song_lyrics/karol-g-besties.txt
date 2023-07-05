@@ -16,16 +16,14 @@ Y al primero que pueda pillar
 Pa' ponerlo a suspirar
 [Coro]
 En el maqui con las besties voy
-De camino a la disco (De camino a la disco; 
-tra, tra
-)
+De camino a la disco (De camino a la disco; tra, tra)
 Nos pusimo' todas sеxies hoy
 En bajita, no me han visto (Mamacita)
 En el maqui con las bеsties voy
 De camino a la disco
 Nos pusimo' todas sexies hoy
-Con diamantes en el gistro
- (Pa' bellaquear)[Verso]
+Con diamantes en el gistro (Pa' bellaquear)
+[Verso]
 Salimos del callejón (Ah; pa' ponerno' a vacilar)
 Nos brilla la espalda con el cadenón
 En la pista ya se siente la presión
@@ -49,7 +47,8 @@ En bajita, no me han visto (En bajita, no me han visto; ey)
 En el maqui con las besties voy
 De camino a la disco (De camino a la disco)
 Nos pusimo' todas sexies hoy
-Con diamantes en el gistro (Con diamantes en el)[Skit]
+Con diamantes en el gistro (Con diamantes en el)
+[Skit]
 Ey, ahí llamó la bebecita, que nos vamos de farra
 Parce, ahí llamó la bebesuki
 Pa' que nos pongamos bien chimbitas, pues (Ya)

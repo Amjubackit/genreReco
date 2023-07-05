@@ -27,7 +27,8 @@ When there is no light
 We are heroes
 Heroes in the darkest times
 But we'll rise above
-We are heroes[Bridge]
+We are heroes
+[Bridge]
 When the night is starless
 Only we can spark it
 Light it up in the darkness

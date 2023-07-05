@@ -1,7 +1,5 @@
 [Intro]
-(
-We love you, Tecca
-)
+(We love you, Tecca)
 [Chorus]
 I got a pack, hit 'em and do it again
 Fuck it, I'm fuckin' her friend
@@ -25,7 +23,8 @@ If you want a feature, give me a grand
 Drip on my body, I'm cool like a fan
 I can not lose, I was up grindin', they snooze
 Fuck all the fightin', be cool
-Fuck all the dyin', keep tools[Chorus]
+Fuck all the dyin', keep tools
+[Chorus]
 I got a pack, hit 'em and do it again
 Fuck it, I'm fuckin' her friend
 I got bands, one day I'm flying to France
