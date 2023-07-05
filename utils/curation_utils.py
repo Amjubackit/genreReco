@@ -40,7 +40,7 @@ def transfer_to_categorical(df, numeric_to_bin_value_dict, categorical_col_names
     bin_cols = list(numeric_to_bin_value_dict.keys())
     transferred_df = df.copy()
     for col in bin_cols:
-        transferred_df[f"{col}_categotial"] = pd.cut(
+        transferred_df[f"{col}_categorical"] = pd.cut(
             transferred_df[col],
             numeric_to_bin_value_dict[col],
             labels=[1, 2, 3, 4, 5]

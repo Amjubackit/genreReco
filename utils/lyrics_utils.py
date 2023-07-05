@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
 from utils.general_utls import is_file_valid
+from langdetect import detect
+
 slang_file_path = osp.join(osp.dirname(osp.abspath(__file__)), 'slang_words.txt')
 
 STOPWORD_LIST = set(stopwords.words('english'))
@@ -111,7 +113,7 @@ def fetch_lyrics(url):
 
         # Find the lyrics section
         lyrics_divs = soup.find_all('div', attrs={"data-lyrics-container": "true"})
-        lyrics_lines =[]
+        lyrics_lines = []
         for d in lyrics_divs:
             [lb.replaceWith('\n') for lb in d.findAll('br')]
 
@@ -152,3 +154,18 @@ def reget_lyrics_df(dataset):
         dataset.loc[index] = record
 
     return dataset
+
+
+def is_english_song(row):
+    handler = LyricsHandler(row["lyrics_file"])
+    lyrics = handler.clean_lyrics
+    try:
+        language = detect(lyrics)
+    except:
+        return False
+
+    return language == "en"
+
+
+def remove_non_english_songs(df):
+    return df[df.apply(is_english_song, axis=1)]
