@@ -79,43 +79,34 @@ def transfer_str_to_numeric_vals(dataset):
     return dataset
 
 
-def plot_frequencies(dataset):
-    ordinal_cols = ['common_genre', 'release_year', 'release_month', 'popularity',
-                    'intro_cnt', 'outro_cnt', 'verse_cnt', 'chorus_cnt']
-    cols = min(len(ordinal_cols), 3)
-    rows = math.ceil((len(ordinal_cols) / 3))
+def plot_frequencies(dataset, cols, plot_type, num_top=None):
+    cols_cnt = min(len(cols), 3)
+    rows_cnt = math.ceil((len(cols) / 3))
 
-    for dummy in range(rows):
-        sub_list = ordinal_cols[dummy * cols:(dummy + 1) * cols]
-        if dummy == 0:
-            plot_types = ['pie', 'bar', 'bar']
-        else:
-            plot_types = ['bar'] * len(sub_list)
-
+    for dummy in range(rows_cnt):
+        sub_list = cols[dummy * cols_cnt:(dummy + 1) * cols_cnt]
         plot_frequent_elements(
             dataset,
             pd.DataFrame({
-                'plot_type': plot_types,
+                'plot_type': [plot_type] * len(sub_list),
                 'col_name': sub_list,
-                'num_top_elements': [7] * len(sub_list)
+                'num_top_elements': [num_top or 10000] * len(sub_list)
             })
         )
 
-    numeric_cols = ['unique_words_ratio', 'stop_words_ratio', 'slang_words_ratio',
-                    'positive', 'negative', 'neutral', 'compound']
-    cols = min(len(numeric_cols), 3)
-    rows = math.ceil((len(numeric_cols) / 3))
 
-    for ridx in range(rows):
-        fig, axs = plt.subplots(1, min(cols, len(numeric_cols) - ridx * 3), figsize=(20, 5))
+def plot_histograms(dataset, cols):
+    cols_cnt = min(len(cols), 3)
+    rows_cnt = math.ceil((len(cols) / 3))
+
+    for ridx in range(rows_cnt):
+        fig, axs = plt.subplots(1, min(cols_cnt, len(cols) - ridx * 3), figsize=(20, 5))
         axs = np.array(axs).reshape(-1)
-        for i, col in enumerate(numeric_cols[ridx * 3:ridx * 3 + 3]):
+        for i, col in enumerate(cols[ridx * 3:ridx * 3 + 3]):
             sns.histplot(dataset[col], ax=axs[i])
 
 
-def plot_continuous_feature_relations(dataset):
-    continuous_vars = ["duration", "line_cnt", "word_cnt", "unique_words_ratio", "stop_words_ratio",
-                       "slang_words_ratio"]
+def plot_continuous_feature_relations(dataset, continuous_vars):
     var_combinations = [(var1, var2) for var1 in continuous_vars for var2 in continuous_vars if var1 < var2]
     rows_num = math.ceil(len(var_combinations) / 3)
     for row_index in range(rows_num):
