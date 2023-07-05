@@ -68,11 +68,6 @@ def purify_text(text):
     return text.lower()
 
 
-def save_lyrics(txt, file_path):
-    with open(file_path, 'w') as file:
-        file.write(txt)
-
-
 def remove_file(file_path):
     try:
         os.remove(file_path)
