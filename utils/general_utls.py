@@ -35,7 +35,8 @@ def split_list_items(list_items):
 def remove_non_genres(word_list):
     # Search weired genre patterns for each genre in genre list
     # Returns actual genre list
-    return [genre for genre in GENRE_LIST for item in word_list if genre in item]
+    # Avoid counting trap as rap
+    return [genre for genre in GENRE_LIST for item in word_list if genre in item and item != 'trap']
 
 
 def get_common_genre(song_genres):
