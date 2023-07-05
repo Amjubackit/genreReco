@@ -1,3 +1,4 @@
+from sklearn.metrics import make_scorer
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
 from sklearn.model_selection import cross_val_score
@@ -46,7 +47,10 @@ def calc_evaluation_val(eval_metric, y_test, y_predicted):
     val = metric_map.get(eval_metric)
     if val is None:
         return
-    return val(y_true=y_test, y_pred=y_predicted)
+    kwargs = {}
+    if eval_metric in ['precision', 'recall', 'f1']:
+        kwargs['average'] = 'weighted'
+    return val(y_true=y_test, y_pred=y_predicted, **kwargs)
 
 
 def find_best_model(X_train, y_train, max_depth_val, min_samples_split_val):
@@ -70,3 +74,19 @@ def find_best_model(X_train, y_train, max_depth_val, min_samples_split_val):
             best_clf = clf
 
     return best_clf, best_recall
+
+
+def find_best_k_for_KNN(X_train, y_train):
+    parameters = {'n_neighbors': [1,2,3,4,5,7,9,11,13,15,17,19]}
+    clf = GridSearchCV(
+        KNeighborsClassifier(),
+        parameters,
+        scoring=make_scorer(
+            metrics.accuracy_score,
+            greater_is_better=True
+        )
+
+    )
+
+    clf.fit(X_train, y_train)
+    return clf.best_params_.get('n_neighbors'), clf.best_score_

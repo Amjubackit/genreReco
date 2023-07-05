@@ -36,13 +36,12 @@ def outlier_detection_iqr(df, dfunc):
     return df_main
 
 
-def transfer_to_categorical(df, numeric_to_bin_value_dict, categorical_col_names):
-    bin_cols = list(numeric_to_bin_value_dict.keys())
+def transfer_to_categorical(df, bin_cols, categorical_col_names):
     transferred_df = df.copy()
     for col in bin_cols:
         transferred_df[f"{col}_categorical"] = pd.cut(
             transferred_df[col],
-            numeric_to_bin_value_dict[col],
+            5,
             labels=[1, 2, 3, 4, 5]
         )
 
